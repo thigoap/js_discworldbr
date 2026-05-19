@@ -1,0 +1,38 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: arch
+  filter:
+    - all
+    - livros
+    - personagens
+    - archList
+  addAllPagesToCollections: true
+layout: base
+eleventyComputed:
+  title: Arco {{ arch }}
+permalink: /guia/{{ arch }}/
+---
+
+<div class="md:w-4/5 md:mx-auto">
+  <div class="grid grid-cols-[repeat(auto-fit,180px)] justify-center">
+  {%- for book in collections[ arch ] -%}
+    <div class="flex flex-col my-2 text-sm">
+      <a class="mx-auto" href="{{ book.url | url }}">
+        <img 
+          class="h-48 object-contain"
+          src="../../static/assets/livros/{{ book.data.mini }}"
+          alt={{ book.data.titulo }}>
+      </a>
+      <div class="m-1 text-center">
+        <p><a class="mx-auto link" href="{{ book.url | url }}">
+          {{ book.data.titulo }}
+        </a></p>
+      </div>
+    </div>
+  {%- endfor -%}
+  </div>
+</div>
+
+<p class="text-center">Veja todos os <a class="text-yellow-800" href="{{ '/guia/' | url }}">arcos</a>.</p>

@@ -1,0 +1,5 @@
+.link {
+  @apply transition;
+  @apply duration-300;
+  @apply hover:text-red-800;
+}
