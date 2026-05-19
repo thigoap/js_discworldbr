@@ -300,6 +300,9 @@
   .grid-cols-\[repeat\(auto-fit\,180px\)\] {
     grid-template-columns: repeat(auto-fit,180px);
   }
+  .grid-cols-\[repeat\(auto-fit\,200px\)\] {
+    grid-template-columns: repeat(auto-fit,200px);
+  }
   .flex-col {
     flex-direction: column;
   }
