@@ -5,6 +5,7 @@ data: collections.personagens
 ---
 
 <div class="md:w-9/12 md:mx-auto">
+	<h1 class="text-center text-2xl font-semibold mt-2 ">Personagens</h1>
   <p class="text-center m-2">Alguns dos principais personagens do Discworld.</p>
   <div class="grid grid-cols-[repeat(auto-fit,200px)]  justify-center">
   {%- for char in collections.personagens | sortByOrder -%}

@@ -1,0 +1,14 @@
+---
+layout: base
+---
+
+<div class="m-4 md:w-4/5 md:mx-auto">
+
+	<h1 class="text-center text-2xl font-semibold mt-2 mb-4">Blog</h1>
+
+    {% for post in collections.posts | reverse %}
+        <p>{{ post.data.published }}<br>
+        <a class="underline link"
+        href="{{ post.url}}">{{ post.data.title }}</a></p><br>
+    {% endfor %}
+</div>

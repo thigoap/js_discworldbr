@@ -7,6 +7,7 @@ pagination:
     - all
     - livros
     - personagens
+    - posts
     - archList
   addAllPagesToCollections: true
 layout: base
@@ -14,6 +15,8 @@ eleventyComputed:
   title: Arco {{ arch }}
 permalink: /guia/{{ arch }}/
 ---
+
+<p class="text-center text-2xl font-semibold mt-2 ">Arcos: {{ arch }}</p>
 
 <div class="md:w-4/5 md:mx-auto">
   <div class="grid grid-cols-[repeat(auto-fit,180px)] justify-center">

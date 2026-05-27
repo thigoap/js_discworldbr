@@ -3,3 +3,14 @@
   @apply duration-300;
   @apply hover:text-red-800;
 }
+
+.drop_caps_p::first-letter {
+    color: black;
+    padding: 0 0.3rem;
+    margin: 0 0.3rem 0 0;
+    border: 2px solid;
+    border-radius: 8px;
+    font-size: 2.5rem;
+    float: left;
+    line-height: 1;
+}

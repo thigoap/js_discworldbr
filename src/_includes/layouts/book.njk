@@ -14,9 +14,11 @@ layout: base
 		<p><span class="font-semibold">Páginas</span>: {{ paginas }}</p>
 		<p><span class="font-semibold">Editora</span>: {{ editora }}</p>
 		{% if amazon %}
+        <div>
 		<a class="inline-block py-2 px-6 bg-[#FF9900] text-[#232F3E] font-bold rounded-sm max-w-fit"
 			href="{{ amazon }}" target="_blank"><p>Ver na Amazon</p>
 		</a>
+        </div>
 		{% endif %}
     </div>
   </div>
@@ -32,7 +34,7 @@ layout: base
     {% endif %}
     {%- set nextBook = collections.livros | getNextCollectionItem(page) %}
     {%- if nextBook %}
-      <p><span class="font-semibold">Próxmo livro</span>: <a class="text-yellow-800" href="{{ nextBook.url | url }}">{{ nextBook.data.titulo }}</a></p>
+      <p><span class="font-semibold">Próximo livro</span>: <a class="text-yellow-800" href="{{ nextBook.url | url }}">{{ nextBook.data.titulo }}</a></p>
     {% endif %}
   </div>
 

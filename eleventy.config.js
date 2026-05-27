@@ -9,6 +9,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk")
   eleventyConfig.addLayoutAlias("books", "layouts/book.njk")
   eleventyConfig.addLayoutAlias("chars", "layouts/char.njk")
+  eleventyConfig.addLayoutAlias("posts", "layouts/post.njk")
 
   eleventyConfig.setDataDeepMerge(true);
 
@@ -27,6 +28,8 @@ module.exports = function(eleventyConfig) {
             case "livros":
             case "personagens":
               return false;
+            case "posts":
+                return false;
           }
 
           return true;
