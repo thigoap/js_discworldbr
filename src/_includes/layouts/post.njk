@@ -10,7 +10,7 @@ layout: base
     {{ content | safe }}
 </div>
 
-<div class="flex flex-col mt-8 mx-2 sm:w-3/5 items-center sm:mx-auto sm:flex-row justify-between">
+<div class="flex flex-col mt-8 mb-4 mx-2 sm:w-3/5 items-center sm:mx-auto sm:flex-row justify-between">
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {%- if previousPost %}
     <p><span class="font-semibold">Post anterior</span>: <a class="text-yellow-800" href="{{ previousPost.url | url }}">{{ previousPost.data.smalltitle }}</a></p>
