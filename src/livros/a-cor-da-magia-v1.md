@@ -15,7 +15,7 @@ paginas: 232
 
 amazon: https://amzn.to/3PP7bhp
 
-mini: m-01-a-cor-da-magia.jpg
+mini: m-01-a-cor-da-magia-v1.jpg
 tags: magos
 arco: Magos
 ---
